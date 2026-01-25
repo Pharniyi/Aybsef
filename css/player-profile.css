@@ -1,0 +1,858 @@
+  .player-hero {
+    position: relative;
+    height: 334px;
+    background: url("https://www.figma.com/api/mcp/asset/8ce1ea43-fe7b-4e56-aed5-beff2ede521f") center/cover no-repeat;
+  }
+
+  .player-hero-title {
+    position: absolute;
+    left: 112px;
+    bottom: -32px;
+    width: 487px;
+    height: 126px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+  }
+
+  .player-hero-title h1 {
+    margin: 0;
+    font-size: 54px;
+    line-height: 56px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .player-breadcrumb {
+    background: var(--green-10);
+    padding: 24px 0;
+  }
+
+  .breadcrumb-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .breadcrumb-link {
+    color: var(--green);
+    font-weight: 500;
+  }
+
+  .breadcrumb-label {
+    color: var(--muted);
+  }
+
+  .breadcrumb-mobile {
+    display: none;
+  }
+
+  .breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .player-profile {
+    position: relative;
+    background: var(--green-05);
+    padding: 80px 0 120px;
+  }
+
+  .player-profile {
+    background-image: url("../assets/Strike-Photoroom 1.png");
+    background-repeat: no-repeat;
+    background-position: center 340px;
+    background-size: cover;
+  }
+
+  .player-profile-card {
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 36px;
+  }
+
+  .profile-section h2 {
+    margin: 0 0 24px;
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .profile-info {
+    display: flex;
+    gap: 48px;
+    align-items: flex-end;
+  }
+
+  .profile-photo {
+    width: 356px;
+    height: 470px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: 0 0 auto;
+  }
+
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-details {
+    flex: 1;
+  }
+
+  .profile-name h3 {
+    margin: 0 0 8px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .profile-school p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 0.75);
+  }
+
+  .profile-school span {
+    display: block;
+    margin-top: 2px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .profile-divider,
+  .section-divider {
+    height: 1px;
+    background: rgba(51, 51, 51, 0.2);
+    border-radius: 20px;
+    margin: 24px 0;
+  }
+
+  .profile-tag-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .profile-tag {
+    background: var(--green-10);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .profile-value {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--muted);
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .profile-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .profile-section--videos h2 {
+    margin-bottom: 24px;
+  }
+
+  .videos-layout {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+  }
+
+  .video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 355px;
+  }
+
+  .video-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px 12px 12px;
+    background: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark);
+  }
+
+  .video-item--active {
+    border: 1px solid var(--green);
+    background: var(--green-10);
+  }
+
+  .video-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .video-player {
+    position: relative;
+    width: 741px;
+    height: 434px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .video-player-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-player-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 40px;
+    color: var(--white);
+    background: linear-gradient(180deg, rgba(8, 9, 13, 0) 0%, rgba(8, 9, 13, 0.9) 80.37%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .video-player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .video-player-info p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .video-player-info span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .video-player-progress {
+    position: relative;
+    height: 2px;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.4);
+  }
+
+  .progress-track,
+  .progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    border-radius: 20px;
+  }
+
+  .progress-track {
+    width: 100%;
+    background: rgba(217, 217, 217, 0.4);
+  }
+
+  .progress-bar {
+    width: 49%;
+    background: var(--white);
+  }
+
+  .video-player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .control-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .control-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .control-button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .profile-section--stats h2 {
+    margin-bottom: 24px;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .stat-card {
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--white);
+  }
+
+  .stat-card--wide {
+    flex: 0 0 548px;
+  }
+
+  .stat-card--narrow {
+    flex: 0 0 250px;
+  }
+
+  .stat-header {
+    padding: 10px 24px;
+    background: var(--green-10);
+    color: var(--green);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .stat-grid {
+    display: grid;
+  }
+
+  .stat-grid--running {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .stat-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-grid--four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .stat-grid--single {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-cell {
+    padding: 32px 16px;
+    text-align: center;
+  }
+
+  .stat-cell h3 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .stat-cell p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark);
+  }
+
+  .stat-cell--green {
+    background: #e6f3e6;
+  }
+
+  .stat-cell--light {
+    background: rgba(4, 132, 4, 0.03);
+  }
+
+  .stat-cell--full {
+    grid-column: auto;
+  }
+
+  .stat-footer {
+    background: #e6f3e6;
+    padding: 8px 16px;
+    text-align: center;
+  }
+
+  .stat-footer h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .stat-footer p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark);
+  }
+
+  .profile-section--report {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .report-arrows {
+    display: flex;
+    gap: 16px;
+  }
+
+  .report-arrow {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .report-arrow img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .report-card {
+    background: var(--green-05);
+    border-radius: 8px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .report-title {
+    margin: 0 0 12px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    color: var(--dark);
+  }
+
+  .report-title-main {
+    font-weight: 600;
+  }
+
+  .report-title em {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .report-body {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 0.75);
+    text-align: justify;
+  }
+
+  .report-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .report-author img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  .report-author h3 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--green);
+  }
+
+  .report-author p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark);
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      width: min(100%, 100% - 64px);
+    }
+
+    .player-hero-title {
+      left: 48px;
+    }
+
+    .player-profile-card {
+      padding: 32px;
+    }
+
+    .profile-info {
+      align-items: flex-start;
+    }
+
+    .video-player {
+      width: 100%;
+    }
+
+    .stat-card--wide,
+    .stat-card--narrow {
+      flex: 1 1 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu-toggle {
+      display: flex;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+      gap: 16px;
+      display: none;
+    }
+
+    .nav-menu.is-active {
+      display: flex;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .nav-actions {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .nav-dropdown {
+      width: 100%;
+    }
+
+    .nav-dropdown-toggle {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .player-hero {
+      height: 110px;
+      background: url("https://www.figma.com/api/mcp/asset/210996da-f430-43cf-9214-6a7c1b1ba240") center/cover no-repeat;
+    }
+
+    .player-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(16, 16, 16, 0.5);
+    }
+
+    .player-hero-title {
+      left: 32px;
+      bottom: auto;
+      top: 70px;
+      width: auto;
+      height: auto;
+      padding: 12px 16px;
+      background: rgba(4, 132, 4, 0.75);
+      backdrop-filter: blur(2.743px);
+      z-index: 1;
+    }
+
+    .player-hero-title h1 {
+      font-size: 24px;
+      line-height: 16px;
+      color: var(--white);
+    }
+
+    .player-breadcrumb {
+      padding: 24px 0;
+    }
+
+    .breadcrumb-content {
+      font-size: 16px;
+      line-height: 20px;
+      gap: 8px;
+    }
+
+    .breadcrumb-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .breadcrumb-desktop {
+      display: none;
+    }
+
+    .breadcrumb-mobile {
+      display: inline;
+      color: var(--dark);
+    }
+
+    .player-profile {
+      padding: 32px 0 64px;
+      background-image: none;
+    }
+
+    .player-profile-card {
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .profile-section h2 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    .profile-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 364px;
+    }
+
+    .profile-name {
+      text-align: center;
+    }
+
+    .profile-name h3 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .profile-school p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .profile-school span {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .profile-tag-row {
+      justify-content: center;
+    }
+
+    .profile-tag {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 7px;
+    }
+
+    .profile-value {
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(51, 51, 51, 0.75);
+    }
+
+    .profile-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 24px;
+    }
+
+    .profile-column {
+      gap: 16px;
+    }
+
+    .videos-layout {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .video-player {
+      width: 100%;
+      height: 220px;
+    }
+
+    .video-player-overlay {
+      padding: 8px 12px;
+      gap: 8px;
+      background: linear-gradient(180deg, rgba(8, 9, 13, 0) 0%, rgba(8, 9, 13, 0.45) 80.37%);
+    }
+
+    .video-player-info p {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    .video-player-info span {
+      font-size: 6px;
+      line-height: 12px;
+    }
+
+    .video-player-progress {
+      height: 1px;
+    }
+
+    .progress-track,
+    .progress-bar {
+      height: 1px;
+    }
+
+    .video-player-controls {
+      gap: 8px;
+    }
+
+    .control-button {
+      width: 20px;
+      height: 20px;
+    }
+
+    .control-button img {
+      width: 10px;
+      height: 10px;
+    }
+
+    .video-list {
+      width: 100%;
+      gap: 12px;
+    }
+
+    .video-item {
+      font-size: 13px;
+      line-height: 20px;
+      padding: 10px;
+    }
+
+    .stat-card {
+      width: 100%;
+    }
+
+    .stat-header {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8px 16px;
+    }
+
+    .stat-grid--running,
+    .stat-grid--four {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stat-grid--running .stat-cell--full {
+      grid-column: 1 / -1;
+    }
+
+    .stat-cell {
+      padding: 16px 8px;
+    }
+
+    .stat-cell h3,
+    .stat-footer h3 {
+      font-size: 22px;
+      line-height: 16px;
+    }
+
+    .stat-cell p,
+    .stat-footer p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .stat-footer {
+      padding: 16px 8px;
+    }
+
+    .report-header h2 {
+      font-size: 20px;
+    }
+
+    .report-card {
+      padding: 16px 24px;
+      gap: 24px;
+    }
+
+    .report-title {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .report-title em {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .report-body {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .report-author img {
+      width: 42px;
+      height: 42px;
+    }
+
+    .report-author h3 {
+      font-size: 18px;
+    }
+
+    .report-author p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      width: min(100%, 100% - 32px);
+    }
+  }

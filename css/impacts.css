@@ -1,0 +1,492 @@
+/* Impacts Page Styles */
+
+/* Hero Section - Matching Participants Page */
+.impact-hero {
+  position: relative;
+  height: 334px;
+  background: url("https://www.figma.com/api/mcp/asset/b83fead0-1c83-47ca-9b09-ed378bf41eeb") center/cover no-repeat;
+}
+
+.impact-hero-title {
+  position: absolute;
+  left: 112px;
+  bottom: -32px;
+  width: 418px;
+  height: 126px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+}
+
+.impact-hero-title h1 {
+  margin: 0;
+  font-size: 54px;
+  line-height: 56px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Impact Intro Section */
+.impact-about {
+  background: var(--green-05);
+  padding: 80px 0 64px;
+}
+
+.impact-about-inner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.impact-about-card {
+  position: relative;
+  width: 592px;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.impact-about-media {
+  position: absolute;
+  inset: 0;
+}
+
+.impact-about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.impact-about-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(112.53% 112.53% at 50% 50%, rgba(51, 51, 51, 0.55) 0%, rgba(51, 51, 51, 0.85) 100%);
+}
+
+.impact-about-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.impact-about-header {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+}
+
+.impact-about-header p {
+  margin: 0;
+  font: var(--Text\/Semi-bold\/Small);
+  color: var(--white);
+  max-width: 414px;
+}
+
+.impact-about-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.impact-about-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.impact-about-menu {
+  width: 42px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.impact-about-menu span {
+  width: 4px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.impact-about-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--dark);
+  text-align: justify;
+  max-width: 592px;
+}
+
+/* Divider Section */
+.divider-section {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  padding: 32px 0 16px;
+  background: var(--green-05);
+}
+
+.stitch-divider {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.impact-decor {
+  position: relative;
+  background: var(--white);
+}
+
+.impact-decor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  height: 856px;
+  background: url("../assets/Strike-Photoroom 1.png") center/cover no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.impact-decor > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 48px 0 64px;
+  background: var(--white);
+}
+
+.achievements-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.green-icon-box {
+  background: var(--green);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievements-header h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.achievements-list span {
+  background: var(--green-05);
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  color: var(--green);
+}
+
+/* Events Section */
+.events-section {
+  padding: 64px 0;
+  background: var(--green-05);
+}
+
+.events-section:nth-of-type(even) {
+  background: var(--white);
+}
+
+.events-section h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 32px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.event-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.event-image {
+  height: 180px;
+  width: 100%;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+}
+
+.event-date .day {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.event-date .month {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.event-info h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.event-info p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    width: min(100%, 100% - 64px);
+  }
+
+  .impact-hero-title {
+    left: 48px;
+  }
+  
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Navigation Styles (Copied from participants.css) */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: none;
+  }
+
+  .nav-menu.is-active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    border-bottom: 1px solid var(--green-05);
+  }
+
+  .nav-actions {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-dropdown,
+  .nav-dropdown-toggle {
+    width: 100%;
+  }
+
+  .nav-dropdown-toggle {
+    justify-content: space-between;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding-left: 16px;
+    background: var(--green-05);
+    margin-top: 8px;
+  }
+
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-logo .logo {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Impact Page Specific Mobile Styles */
+  .impact-hero {
+    height: 90px;
+  }
+
+  .impact-hero-title {
+    width: auto;
+    height: auto;
+    left: 32px;
+    bottom: -26px;
+    padding: 12px 16px;
+    background: rgba(4, 132, 4, 0.75);
+    backdrop-filter: blur(2.743px);
+  }
+
+  .impact-hero-title h1 {
+    font-size: 24px;
+    line-height: 16px;
+    color: var(--white);
+  }
+
+  .impact-about {
+    padding: 48px 0 40px;
+  }
+
+  .impact-about-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .impact-about-card {
+    width: 296px;
+    height: 216px;
+  }
+
+  .impact-about-header {
+    left: 16px;
+    top: 16px;
+  }
+
+  .impact-about-header p {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 180px;
+  }
+
+  .impact-about-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .impact-about-logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .impact-about-menu {
+    width: 21px;
+    height: 24px;
+  }
+
+  .impact-about-menu span {
+    width: 3px;
+    height: 3px;
+  }
+
+  .impact-about-text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .divider-section {
+    padding: 24px 0 12px;
+  }
+
+  .impact-decor::before {
+    top: 80px;
+    height: 540px;
+    opacity: 0.2;
+  }
+
+  .achievements-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,317 @@
+/* Team Profile Page Styles */
+.team-profile-hero {
+  position: relative;
+  height: 334px;
+  background: url("https://www.figma.com/api/mcp/asset/0e0ef33c-3ad1-477c-bdb9-dc5c21bc9d05") center/cover no-repeat;
+}
+
+.team-profile-hero-title {
+  position: absolute;
+  left: 112px;
+  bottom: -32px;
+  width: 268px;
+  height: 126px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+}
+
+.team-profile-hero-title h1 {
+  margin: 0;
+  font-size: 54px;
+  line-height: 56px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.team-profile-breadcrumb {
+  padding: 24px 0 16px;
+}
+
+.team-profile-breadcrumb .breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.team-profile-breadcrumb .breadcrumb-link {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.team-profile-breadcrumb .breadcrumb-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.breadcrumb-label-mobile {
+  display: none;
+}
+
+.team-profile-details {
+  padding: 24px 0 96px;
+}
+
+.team-profile-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 36px;
+  display: flex;
+  gap: 48px;
+  box-shadow: var(--card);
+}
+
+.team-profile-photo {
+  width: 420px;
+  height: 432px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.team-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.team-profile-header h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.team-profile-header p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.75);
+}
+
+.team-profile-bio h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.team-profile-bio p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.75);
+  text-align: justify;
+}
+
+.team-profile-divider {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(100%, 100% - 64px);
+  }
+
+  .team-profile-hero-title {
+    left: 48px;
+  }
+
+  .team-profile-card {
+    flex-direction: column;
+  }
+
+  .team-profile-photo {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: none;
+  }
+
+  .nav-menu.is-active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    border-bottom: 1px solid var(--green-05);
+  }
+
+  .nav-actions {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-dropdown,
+  .nav-dropdown-toggle {
+    width: 100%;
+  }
+
+  .nav-dropdown-toggle {
+    justify-content: space-between;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding-left: 16px;
+    background: var(--green-05);
+    margin-top: 8px;
+  }
+
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-logo .logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .team-profile-hero {
+    height: 90px;
+  }
+
+  .team-profile-hero-title {
+    width: auto;
+    height: auto;
+    left: 32px;
+    bottom: -26px;
+    padding: 12px 16px;
+    background: rgba(4, 132, 4, 0.75);
+    backdrop-filter: blur(2.743px);
+  }
+
+  .team-profile-hero-title h1 {
+    font-size: 24px;
+    line-height: 16px;
+    color: var(--white);
+  }
+
+  .team-profile-breadcrumb {
+    background: var(--green-05);
+    padding: 24px 0;
+  }
+
+  .team-profile-breadcrumb .breadcrumb-content {
+    gap: 8px;
+  }
+
+  .team-profile-breadcrumb .breadcrumb-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .breadcrumb-label-desktop {
+    display: none;
+  }
+
+  .breadcrumb-label-mobile {
+    display: inline;
+    font-size: 16px;
+    color: var(--dark);
+  }
+
+  .team-profile-details {
+    padding: 24px 0 72px;
+  }
+
+  .team-profile-card {
+    padding: 24px 0;
+    box-shadow: none;
+    gap: 24px;
+  }
+
+  .team-profile-photo {
+    width: 100%;
+    max-width: 296px;
+    height: 360px;
+  }
+
+  .team-profile-header h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .team-profile-header p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .team-profile-divider {
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(51, 51, 51, 0.2);
+  }
+
+  .team-profile-bio h3 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  .team-profile-bio p {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 300;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: min(100%, 100% - 64px);
+  }
+
+  .team-profile-card {
+    align-items: flex-start;
+  }
+}

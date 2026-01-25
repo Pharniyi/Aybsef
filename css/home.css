@@ -1,0 +1,350 @@
+@media (max-width: 991px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: none;
+  }
+
+  .nav-menu.is-active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    border-bottom: 1px solid var(--green-05);
+  }
+
+  .nav-actions {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-dropdown,
+  .nav-dropdown-toggle {
+    width: 100%;
+  }
+
+  .nav-dropdown-toggle {
+    justify-content: space-between;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding-left: 16px;
+    background: var(--green-05);
+    margin-top: 8px;
+  }
+
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-logo .logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(100%, 100% - 64px);
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .courses-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-card {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .logo {
+    width: 136px;
+    height: 38px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero::before {
+    content: none;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    min-height: auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .hero-top {
+    width: 100%;
+    padding: 96px 32px 32px;
+    background: linear-gradient(105deg, rgba(4, 132, 4, 0.95) 0%, rgba(4, 132, 4, 0.85) 38%, rgba(4, 132, 4, 0.15) 62%, rgba(4, 132, 4, 0) 74%),
+      url("../assets/background-mobile.png") center/cover no-repeat;
+  }
+
+  .hero-copy {
+    width: 100%;
+    background: var(--white);
+    color: var(--dark);
+    padding: 24px 32px 32px;
+  }
+
+  .hero-top h1 {
+    font-size: 28px;
+    line-height: 28.5px;
+    max-width: 296px;
+    margin: 0;
+  }
+
+  .hero-copy p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 320px;
+  }
+
+  .hero-copy .btn-light {
+    background: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+  }
+
+  .hero-mobile-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background: url("../assets/background2-mobile.png.png") center/cover no-repeat;
+  }
+
+  .about-strip {
+    padding: 32px 0;
+  }
+
+  .about-strip h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-strip p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .who-we-are {
+    padding: 48px 0 120px;
+  }
+
+  .string-divider {
+    margin-top: -24px;
+  }
+
+  .metrics {
+    padding: 16px 0 40px;
+  }
+
+  .who-card {
+    margin: 0 32px;
+    padding: 24px 18px;
+  }
+
+  .who-card-header span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .metrics {
+    margin-top: -80px;
+    padding: 32px 0 48px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .metric-value {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .metric-label {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .courses-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .partners-logos {
+    gap: 24px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate {
+    padding: 48px 0;
+  }
+
+  .donate-card {
+    margin: 0 32px;
+    border-radius: 4px;
+  }
+
+  .donate-copy {
+    padding: 24px;
+  }
+
+  .donate-copy h3 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    border-left: none;
+    padding-left: 0;
+    font: var(--Text\/Semi-bold\/Large);
+    color: rgba(51, 51, 51, 0.75);
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom .container {
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: min(100%, 100% - 32px);
+  }
+
+  .hero-top {
+    padding: 80px 20px 24px;
+  }
+
+  .hero-top h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero-copy {
+    padding: 20px 20px 28px;
+  }
+
+  .hero-copy p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .hero-mobile-image {
+    height: 200px;
+  }
+
+  .who-card {
+    margin: 0 20px;
+  }
+
+  .metrics-grid {
+    gap: 16px;
+  }
+
+  .metric-label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .courses-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-card {
+    margin: 0 20px;
+  }
+}
