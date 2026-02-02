@@ -28,11 +28,13 @@
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
       font-family: "Inter", sans-serif;
       color: var(--dark);
       background: var(--white);
+      overflow-x: hidden;
     }
 
     img {
