@@ -306,7 +306,7 @@
 
     .who-we-are {
       position: relative;
-      background: url("/assets/Who\ we\ aare.svg") center/cover no-repeat;
+      /* background: url("/assets/Who\ we\ aare.svg") center/cover no-repeat; */
       padding: 120px 0 200px;
     }
 
@@ -314,6 +314,7 @@
       content: "";
       position: absolute;
       inset: 0;
+      background: url("/assets/Who\ we\ aare.svg") center/cover no-repeat;
     }
 
     .who-card {
