@@ -314,7 +314,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: url("/assets/Who\ we\ aare.png") center/cover no-repeat;
+      background: url("/assets/Who-we-aare.png") center/cover no-repeat;
     }
 
     .who-card {
