@@ -91,7 +91,7 @@
       align-items: center;
       gap: 10px;
       width: max-content;
-    } 
+    }
 
     .btn-outline {
       border-color: var(--green);
@@ -249,8 +249,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(105deg, rgba(4, 132, 4, 0.95) 0%, rgba(4, 132, 4, 0.85) 38%, rgba(4, 132, 4, 0.15) 62%, rgba(4, 132, 4, 0) 74%),
-        url("../assets/Background (1).png") center/cover no-repeat;
+      background: url("../assets/Background (1).png") center/cover no-repeat;
       z-index: 0;
     }
 
@@ -281,7 +280,7 @@
     .hero-copy p {
       margin: 0 0 24px;
       font: var(--Text\/Regular\/Medium);
-      max-width: 592px;
+      max-width: 543px;
     }
 
     .hero-mobile-image {
@@ -484,16 +483,15 @@
 
     .partners-logos {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 120px;
+      gap: 100px;
       flex-wrap: no-wrap;
       padding-bottom: 24px;
     }
 
     .team h3,
     .testimonials h3 {
-      text-align: center;
       margin: 0 0 48px;
       font: var(--Text\/Display\/H5);
       color: var(--green);
@@ -564,7 +562,8 @@
     .donate {
       position: relative;
       padding: 80px 0;
-      background: url("https://www.figma.com/api/mcp/asset/ff8b6b30-f3a1-4eb8-82aa-e46a71656b8a") center/cover no-repeat;
+      /*background: url("https://www.figma.com/api/mcp/asset/ff8b6b30-f3a1-4eb8-82aa-e46a71656b8a") center/cover no-repeat;*/
+      background: url("/assets/Strike-Photoroom\ 1.png") center/cover no-repeat;
     }
 
     .donate::after {
@@ -612,7 +611,8 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 24px; /* 120% */
+      line-height: 24px;
+      /* 120% */
     }
 
     .donate-image {
@@ -670,8 +670,70 @@
       padding: 18px 0;
     }
 
-    .footer-bottom .container {
-      display: flex;
-      align-items: center;
-    }
 
+    @media (max-width: 768px) {
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 64px 0 48px;
+        text-align: center;
+      }
+
+      .footer-logo {
+        order: 2;
+        width: min(280px, 100% - 64px);
+        height: auto;
+        margin-top: 16px;
+      }
+
+      .footer-list {
+        order: 1;
+        border-left: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        font: var(--Text\/Semi-bold\/Large) !important;
+        font-size: 24px !important;
+        color: rgba(51, 51, 51, 0.75) !important;
+      }
+
+      .footer-list a,
+      .footer-list span {
+        display: block;
+
+      }
+
+      .footer-list a:last-child,
+      .footer-list span:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Remove margin between the two lists to make it look like one */
+      .footer-list:nth-of-type(1) {
+        margin-bottom: 32px;
+      }
+
+      .footer-social {
+        order: 3;
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .footer-social h3 {
+        display: none;
+      }
+
+      .footer-icons {
+        justify-content: center;
+        gap: 24px;
+      }
+
+      .footer-bottom .container {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }

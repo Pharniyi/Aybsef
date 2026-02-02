@@ -1,27 +1,29 @@
   .player-hero {
     position: relative;
     height: 334px;
-    background: url("https://www.figma.com/api/mcp/asset/8ce1ea43-fe7b-4e56-aed5-beff2ede521f") center/cover no-repeat;
+    background: url("../assets/profile-herobg.png") center/cover no-repeat;
+    overflow: visible;
   }
 
   .player-hero-title {
     position: absolute;
-    left: 112px;
-    bottom: -32px;
-    width: 487px;
-    height: 126px;
-    background: rgba(255, 255, 255, 0.75);
+    left: 80px;
+    bottom: -48px;
+    width: 280px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding-left: 48px;
+    justify-content: center;
+    z-index: 10;
   }
 
   .player-hero-title h1 {
     margin: 0;
-    font-size: 54px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: 700;
     color: var(--dark);
   }
@@ -29,6 +31,7 @@
   .player-breadcrumb {
     background: var(--green-10);
     padding: 24px 0;
+    margin-top: 60px;
   }
 
   .breadcrumb-content {
@@ -326,8 +329,8 @@
 
   .stats-row {
     display: flex;
-    gap: 48px;
-    flex-wrap: wrap;
+    gap: 40px;
+    flex-wrap: nowrap;
     margin-bottom: 32px;
   }
 
@@ -338,11 +341,11 @@
   }
 
   .stat-card--wide {
-    flex: 0 0 548px;
+    flex: 0 0 492px;
   }
 
   .stat-card--narrow {
-    flex: 0 0 250px;
+    flex: 0 0 230px;
   }
 
   .stat-header {
@@ -516,343 +519,4 @@
     font-size: 20px;
     line-height: 24px;
     color: var(--dark);
-  }
-
-  @media (max-width: 1024px) {
-    .container {
-      width: min(100%, 100% - 64px);
-    }
-
-    .player-hero-title {
-      left: 48px;
-    }
-
-    .player-profile-card {
-      padding: 32px;
-    }
-
-    .profile-info {
-      align-items: flex-start;
-    }
-
-    .video-player {
-      width: 100%;
-    }
-
-    .stat-card--wide,
-    .stat-card--narrow {
-      flex: 1 1 100%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .mobile-menu-toggle {
-      display: flex;
-    }
-
-    .nav-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 16px;
-      gap: 16px;
-      display: none;
-    }
-
-    .nav-menu.is-active {
-      display: flex;
-    }
-
-    .nav-links {
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-    }
-
-    .nav-actions {
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .nav-dropdown {
-      width: 100%;
-    }
-
-    .nav-dropdown-toggle {
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .player-hero {
-      height: 110px;
-      background: url("https://www.figma.com/api/mcp/asset/210996da-f430-43cf-9214-6a7c1b1ba240") center/cover no-repeat;
-    }
-
-    .player-hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(16, 16, 16, 0.5);
-    }
-
-    .player-hero-title {
-      left: 32px;
-      bottom: auto;
-      top: 70px;
-      width: auto;
-      height: auto;
-      padding: 12px 16px;
-      background: rgba(4, 132, 4, 0.75);
-      backdrop-filter: blur(2.743px);
-      z-index: 1;
-    }
-
-    .player-hero-title h1 {
-      font-size: 24px;
-      line-height: 16px;
-      color: var(--white);
-    }
-
-    .player-breadcrumb {
-      padding: 24px 0;
-    }
-
-    .breadcrumb-content {
-      font-size: 16px;
-      line-height: 20px;
-      gap: 8px;
-    }
-
-    .breadcrumb-icon {
-      width: 14px;
-      height: 14px;
-    }
-
-    .breadcrumb-desktop {
-      display: none;
-    }
-
-    .breadcrumb-mobile {
-      display: inline;
-      color: var(--dark);
-    }
-
-    .player-profile {
-      padding: 32px 0 64px;
-      background-image: none;
-    }
-
-    .player-profile-card {
-      padding: 24px;
-      border-radius: 12px;
-    }
-
-    .profile-section h2 {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 12px;
-    }
-
-    .profile-info {
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .profile-photo {
-      width: 100%;
-      height: 364px;
-    }
-
-    .profile-name {
-      text-align: center;
-    }
-
-    .profile-name h3 {
-      font-size: 28px;
-      line-height: 32px;
-    }
-
-    .profile-school p {
-      font-size: 18px;
-      line-height: 20px;
-    }
-
-    .profile-school span {
-      font-size: 16px;
-      line-height: 16px;
-    }
-
-    .profile-tag-row {
-      justify-content: center;
-    }
-
-    .profile-tag {
-      font-size: 14px;
-      line-height: 16px;
-      padding: 7px;
-    }
-
-    .profile-value {
-      font-size: 16px;
-      line-height: 20px;
-      color: rgba(51, 51, 51, 0.75);
-    }
-
-    .profile-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px 24px;
-    }
-
-    .profile-column {
-      gap: 16px;
-    }
-
-    .videos-layout {
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .video-player {
-      width: 100%;
-      height: 220px;
-    }
-
-    .video-player-overlay {
-      padding: 8px 12px;
-      gap: 8px;
-      background: linear-gradient(180deg, rgba(8, 9, 13, 0) 0%, rgba(8, 9, 13, 0.45) 80.37%);
-    }
-
-    .video-player-info p {
-      font-size: 8px;
-      line-height: 10px;
-    }
-
-    .video-player-info span {
-      font-size: 6px;
-      line-height: 12px;
-    }
-
-    .video-player-progress {
-      height: 1px;
-    }
-
-    .progress-track,
-    .progress-bar {
-      height: 1px;
-    }
-
-    .video-player-controls {
-      gap: 8px;
-    }
-
-    .control-button {
-      width: 20px;
-      height: 20px;
-    }
-
-    .control-button img {
-      width: 10px;
-      height: 10px;
-    }
-
-    .video-list {
-      width: 100%;
-      gap: 12px;
-    }
-
-    .video-item {
-      font-size: 13px;
-      line-height: 20px;
-      padding: 10px;
-    }
-
-    .stat-card {
-      width: 100%;
-    }
-
-    .stat-header {
-      font-size: 14px;
-      line-height: 16px;
-      padding: 8px 16px;
-    }
-
-    .stat-grid--running,
-    .stat-grid--four {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .stat-grid--running .stat-cell--full {
-      grid-column: 1 / -1;
-    }
-
-    .stat-cell {
-      padding: 16px 8px;
-    }
-
-    .stat-cell h3,
-    .stat-footer h3 {
-      font-size: 22px;
-      line-height: 16px;
-    }
-
-    .stat-cell p,
-    .stat-footer p {
-      font-size: 14px;
-      line-height: 24px;
-    }
-
-    .stat-footer {
-      padding: 16px 8px;
-    }
-
-    .report-header h2 {
-      font-size: 20px;
-    }
-
-    .report-card {
-      padding: 16px 24px;
-      gap: 24px;
-    }
-
-    .report-title {
-      font-size: 18px;
-      line-height: 32px;
-    }
-
-    .report-title em {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .report-body {
-      font-size: 18px;
-      line-height: 28px;
-    }
-
-    .report-author img {
-      width: 42px;
-      height: 42px;
-    }
-
-    .report-author h3 {
-      font-size: 18px;
-    }
-
-    .report-author p {
-      font-size: 16px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .container {
-      width: min(100%, 100% - 32px);
-    }
   }

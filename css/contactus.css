@@ -1,9 +1,6 @@
 /* Contact Us Page Styles */
 
-.contact-hero {
-  background: var(--green);
-  padding: 72px 0 96px;
-}
+
 
 .contact-hero-content {
   display: flex;
@@ -15,7 +12,7 @@
 }
 
 .contact-hero-content h1 {
-  margin: 0;
+
   font: var(--Text\/Display\/H2);
 }
 
@@ -24,6 +21,36 @@
   font: var(--Text\/Light\/Large);
   max-width: 940px;
   line-height: 1.5;
+}
+
+.contact-hero {
+  position: relative;
+  height: 334px;
+  background: url("../assets/contacts-hero.png") center/cover no-repeat;
+  overflow: visible;
+}
+
+.programs-hero-title {
+  position: absolute;
+  left: 80px;
+  bottom: -48px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.programs-hero-title h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark);
 }
 
 .contact-section {
@@ -138,101 +165,4 @@
 .contact-submit {
   align-self: flex-end;
   padding: 12px 32px;
-}
-
-@media (max-width: 1024px) {
-  .contact-panel {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    flex: 1;
-  }
-
-  .contact-form {
-    padding: 32px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-hero {
-    padding: 56px 0 64px;
-  }
-
-  .contact-hero-content h1 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .contact-hero-content p {
-    font-size: 18px;
-    max-width: 296px;
-  }
-
-  .contact-panel {
-    padding: 24px;
-    gap: 24px;
-  }
-
-  .contact-section {
-    padding: 112px 0 72px;
-    margin-top: -56px;
-  }
-
-  .contact-panel {
-    transform: translateY(-16px);
-  }
-
-  .contact-form {
-    order: 1;
-    padding: 0;
-    background: transparent;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .form-field input,
-  .form-field textarea {
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 12px;
-  }
-
-  .contact-submit {
-    align-self: stretch;
-    justify-content: center;
-  }
-
-  .contact-info {
-    order: 2;
-    padding: 32px 24px;
-    gap: 42px;
-  }
-
-  .contact-info-header h2 {
-    font-size: 24px;
-  }
-
-  .contact-info-header p {
-    font-size: 16px;
-  }
-
-  .contact-info-item {
-    font-size: 14px;
-    gap: 8px;
-  }
-
-  .contact-info-item img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    width: min(100%, 100% - 32px);
-  }
 }

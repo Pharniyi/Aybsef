@@ -1,27 +1,29 @@
   .participants-hero {
     position: relative;
     height: 334px;
-    background: url("https://www.figma.com/api/mcp/asset/e61f61ab-b85b-4b0a-b7ad-8ed8431c02fc") center/cover no-repeat;
+    background: url("../assets/profile-herobg.png") center/cover no-repeat;
+    overflow: visible;
   }
 
   .participants-hero-title {
     position: absolute;
-    left: 112px;
-    bottom: -32px;
-    width: 418px;
-    height: 126px;
-    background: rgba(255, 255, 255, 0.75);
+    left: 80px;
+    bottom: -48px;
+    width: 280px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding-left: 48px;
+    justify-content: center;
+    z-index: 10;
   }
 
   .participants-hero-title h1 {
     margin: 0;
-    font-size: 54px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: 700;
     color: var(--dark);
   }
@@ -89,163 +91,4 @@
     font-size: 15px;
     line-height: 20px;
     color: rgba(51, 51, 51, 0.75);
-  }
-
-  @media (max-width: 1024px) {
-    .container {
-      width: min(100%, 100% - 64px);
-    }
-
-    .participants-hero-title {
-      left: 48px;
-    }
-
-    .participants-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .mobile-menu-toggle {
-      display: flex;
-    }
-
-    .nav-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 24px;
-      gap: 24px;
-      border-bottom: 1px solid rgba(51, 51, 51, 0.08);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      display: none;
-    }
-
-    .nav-menu.is-active {
-      display: flex;
-    }
-
-    .nav-links {
-      flex-direction: column;
-      width: 100%;
-      gap: 16px;
-    }
-
-    .nav-link {
-      display: block;
-      padding: 12px 0;
-      font-size: 18px;
-      border-bottom: 1px solid var(--green-05);
-    }
-
-    .nav-actions {
-      margin-left: 0;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      gap: 16px;
-    }
-
-    .nav-dropdown,
-    .nav-dropdown-toggle {
-      width: 100%;
-    }
-
-    .nav-dropdown-toggle {
-      justify-content: space-between;
-    }
-
-    .nav-dropdown-menu {
-      position: static;
-      width: 100%;
-      box-shadow: none;
-      border: none;
-      padding-left: 16px;
-      background: var(--green-05);
-      margin-top: 8px;
-    }
-
-    .btn-outline {
-      width: 100%;
-      justify-content: center;
-    }
-
-    .brand-logo .logo {
-      width: 200px;
-      height: auto;
-    }
-
-    .participants-hero {
-      height: 90px;
-    }
-
-    .participants-hero-title {
-      width: auto;
-      height: auto;
-      left: 32px;
-      bottom: -26px;
-      padding: 12px 16px;
-      background: rgba(4, 132, 4, 0.75);
-      backdrop-filter: blur(2.743px);
-    }
-
-    .participants-hero-title h1 {
-      font-size: 24px;
-      line-height: 16px;
-      color: var(--white);
-    }
-
-    .participants-section {
-      padding: 72px 0 24px;
-    }
-
-    .participants-panel {
-      background: transparent;
-      padding: 0;
-    }
-
-    .participants-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-      justify-items: center;
-    }
-
-    .participant-card {
-      width: 136px;
-      border-radius: 3.886px;
-      box-shadow: 0 0.971px 14.571px rgba(51, 51, 51, 0.1);
-    }
-
-    .participant-card img {
-      height: 136px;
-    }
-
-    .participant-info {
-      padding: 8px 12px 12px;
-    }
-
-    .participant-info h2 {
-      font-size: 12px;
-      line-height: 16px;
-    }
-
-    .participant-info p {
-      font-size: 10px;
-      line-height: 12px;
-      color: var(--dark);
-    }
-
-    .mobile-hidden {
-      display: none;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .container {
-      width: min(100%, 100% - 32px);
-    }
   }

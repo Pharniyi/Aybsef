@@ -1,8 +1,8 @@
   .about-hero {
     position: relative;
     height: 334px;
-    background: url("https://www.figma.com/api/mcp/asset/ab9358e8-9135-4e40-b2e4-b139ac459c60") center/cover no-repeat;
-    overflow: hidden;
+    background: url("../assets/aboutus-hero.png") center/cover no-repeat;
+    overflow: visible;
   }
 
   .about-hero-strike {
@@ -22,29 +22,30 @@
 
   .about-hero-card {
     position: absolute;
-    left: 112px;
-    bottom: -32px;
-    width: 341px;
-    height: 126px;
-    background: rgba(255, 255, 255, 0.75);
+    left: 80px;
+    bottom: -48px;
+    width: 280px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding-left: 48px;
+    justify-content: center;
+    z-index: 10;
   }
 
   .about-hero-card h1 {
     margin: 0;
-    font-size: 54px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: 700;
     color: var(--dark);
   }
 
   .about-intro {
     padding: 120px 0 64px;
-    background: var(--white);
+    background: var(--green-05);
   }
 
   .about-intro-grid {
@@ -326,9 +327,9 @@
 
   .about-partners .partners-logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 124px;
+    gap: 100px;
     flex-wrap: wrap;
   }
 
@@ -336,308 +337,4 @@
     height: 100px;
     width: auto;
     object-fit: contain;
-  }
-
-  @media (max-width: 1024px) {
-    .container {
-      width: min(100%, 100% - 64px);
-    }
-
-    .about-hero-card {
-      left: 48px;
-    }
-
-    .about-intro-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .about-video {
-      height: 360px;
-    }
-
-    .about-values-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .value-card--wide,
-    .value-card--narrow {
-      grid-column: span 1;
-    }
-
-    .team-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .mobile-menu-toggle {
-      display: flex;
-    }
-
-    .nav-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 24px;
-      gap: 24px;
-      border-bottom: 1px solid rgba(51, 51, 51, 0.08);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      display: none;
-    }
-
-    .nav-menu.is-active {
-      display: flex;
-    }
-
-    .nav-links {
-      flex-direction: column;
-      width: 100%;
-      gap: 16px;
-    }
-
-    .nav-link {
-      display: block;
-      padding: 12px 0;
-      font-size: 18px;
-      border-bottom: 1px solid var(--green-05);
-    }
-
-    .nav-actions {
-      margin-left: 0;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      gap: 16px;
-    }
-
-    .nav-dropdown,
-    .nav-dropdown-toggle {
-      width: 100%;
-    }
-
-    .nav-dropdown-toggle {
-      justify-content: space-between;
-    }
-
-    .nav-dropdown-menu {
-      position: static;
-      width: 100%;
-      box-shadow: none;
-      border: none;
-      padding-left: 16px;
-      background: var(--green-05);
-      margin-top: 8px;
-    }
-
-    .btn-outline {
-      width: 100%;
-      justify-content: center;
-    }
-
-    .brand-logo .logo {
-      width: 200px;
-      height: auto;
-    }
-
-    .about-hero {
-      height: 90px;
-    }
-
-    .about-hero-strike {
-      display: block;
-      width: 92px;
-      height: 83px;
-      left: -18px;
-      bottom: -32px;
-    }
-
-    .about-hero-card {
-      width: auto;
-      height: auto;
-      left: 40px;
-      bottom: -26px;
-      padding: 12px 16px;
-      background: rgba(4, 132, 4, 0.75);
-      backdrop-filter: blur(2.743px);
-    }
-
-    .about-hero-card h1 {
-      font-size: 24px;
-      line-height: 16px;
-      color: var(--white);
-    }
-
-    .about-intro {
-      padding: 72px 0 24px;
-    }
-
-    .about-intro-grid {
-      gap: 24px;
-    }
-
-    .about-intro-text {
-      order: 2;
-      font-size: 16px;
-      line-height: 28px;
-    }
-
-    .about-video {
-      order: 1;
-      height: 216px;
-      border-radius: 4px;
-    }
-
-    .about-video-header {
-      left: 16px;
-      top: 16px;
-      gap: 6px;
-    }
-
-    .about-video-logo {
-      width: 24px;
-      height: 24px;
-    }
-
-    .about-video-logo img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .about-video-logo-mark {
-      inset: 4px;
-      width: 16px;
-      height: 16px;
-    }
-
-    .about-video-header span {
-      max-width: 207px;
-      font-size: 10px;
-      line-height: 12px;
-    }
-
-    .about-video-more {
-      padding: 6px;
-    }
-
-    .about-video-more img {
-      width: 9px;
-      height: 13px;
-    }
-
-    .about-video-play {
-      width: 42px;
-      height: 28px;
-    }
-
-    .about-mission-item {
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-
-    .about-mission-item img {
-      width: 32px;
-      height: 32px;
-    }
-
-    .about-mission-item h2 {
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    .about-mission-item p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-    .about-values h2 {
-      font-size: 24px;
-      line-height: 32px;
-    }
-
-    .about-values-grid {
-      grid-template-columns: 1fr;
-      gap: 47px;
-    }
-
-    .value-card {
-      padding: 12px 16px;
-      border-radius: 4px;
-      gap: 8px;
-    }
-
-    .value-card img {
-      width: 48px;
-      height: 48px;
-    }
-
-    .value-card h3 {
-      font-size: 18px;
-      line-height: 20px;
-    }
-
-    .value-card p {
-      font-size: 15px;
-      line-height: 20px;
-    }
-
-    .value-card--wide,
-    .value-card--narrow {
-      grid-column: span 1;
-    }
-
-    .team-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-      justify-items: center;
-    }
-
-    .team-card {
-      width: 136px;
-      border-radius: 3.886px;
-      box-shadow: 0 0.971px 14.571px rgba(51, 51, 51, 0.1);
-    }
-
-    .team-card img {
-      height: 136px;
-    }
-
-    .team-card-body {
-      padding: 8px 10px;
-    }
-
-    .team-card-body h3 {
-      font-size: 12px;
-      line-height: 16px;
-    }
-
-    .team-card-body p {
-      font-size: 9px;
-      line-height: 12px;
-    }
-
-    .about-partners {
-      padding: 48px 0 32px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .container {
-      width: min(100%, 100% - 64px);
-    }
-
-    .about-hero-card {
-      left: 40px;
-    }
-
-    .about-partners .partners-logos {
-      gap: 24px;
-    }
-
-    .about-partners .partners-logos img {
-      height: 72px;
-    }
   }
