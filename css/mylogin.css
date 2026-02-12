@@ -1,0 +1,285 @@
+/* MyLogin page – no header/footer, sign in / sign up only */
+body.mylogin-page {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.mylogin-main {
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: block;
+}
+
+.mylogin-main .container {
+  width: min(100% - 32px, 440px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.mylogin-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: none;
+}
+
+.mylogin-back:hover {
+  text-decoration: underline;
+}
+
+/* ----- Auth card ----- */
+.mylogin-auth-section {
+  padding: 48px 24px 80px;
+}
+
+.mylogin-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 40px 32px 32px;
+  box-shadow: 0 2px 12px rgba(51, 51, 51, 0.06);
+  border: 1px solid rgba(51, 51, 51, 0.08);
+}
+
+.mylogin-panel {
+  display: none;
+}
+
+.mylogin-panel.active {
+  display: block;
+}
+
+/* Labels: uppercase, light grey */
+.mylogin-form label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.mylogin-form .form-group {
+  margin-bottom: 20px;
+}
+
+.mylogin-form .form-group-password {
+  margin-bottom: 8px;
+}
+
+/* Inputs: rounded, light grey border */
+.mylogin-form input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--dark);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.mylogin-form input::placeholder {
+  color: #aaa;
+}
+
+.mylogin-form input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+/* Password field with eye icon */
+.mylogin-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mylogin-input-wrap input {
+  padding-right: 48px;
+}
+
+.mylogin-password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.mylogin-password-toggle:hover {
+  color: var(--dark);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mylogin-password-toggle .icon-eye-off {
+  display: none;
+}
+
+.mylogin-password-toggle[aria-pressed="true"] .icon-eye {
+  display: none;
+}
+
+.mylogin-password-toggle[aria-pressed="true"] .icon-eye-off {
+  display: block;
+}
+
+/* Forgot Password link */
+.mylogin-forgot-wrap {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.mylogin-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mylogin-link:hover {
+  text-decoration: underline;
+}
+
+.mylogin-link-inline {
+  font-size: inherit;
+  margin-left: 2px;
+}
+
+/* Log In / Create Account button */
+.mylogin-btn-login {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  transition: background 0.2s;
+}
+
+.mylogin-btn-login:hover {
+  background: #036803;
+}
+
+/* OR divider */
+.mylogin-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mylogin-divider::before,
+.mylogin-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.mylogin-divider span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Continue with Google */
+.mylogin-btn-google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark);
+  background: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.mylogin-btn-google:hover {
+  background: #f8f9fa;
+  border-color: #ccc;
+}
+
+.mylogin-google-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Don't have an account? Sign Up */
+.mylogin-switch-text {
+  margin: 28px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.mylogin-switch-text .mylogin-link-inline {
+  font-weight: 600;
+}
+
+/* Sign up panel: no OR / Google, just Create Account + Already have account */
+#signup-panel .mylogin-divider,
+#signup-panel .mylogin-btn-google {
+  display: none;
+}
+
+#signup-panel .mylogin-btn-login {
+  margin-bottom: 0;
+}
+
+#signup-panel .mylogin-switch-text {
+  margin-top: 24px;
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mylogin-auth-section {
+    padding: 24px 16px 64px;
+  }
+
+  .mylogin-card {
+    padding: 28px 24px 24px;
+  }
+
+  .mylogin-form input {
+    padding: 11px 14px;
+    font-size: 16px;
+  }
+
+  .mylogin-input-wrap input {
+    padding-right: 44px;
+  }
+}

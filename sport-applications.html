@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <script>
+    (function(){try{if(localStorage.getItem('aybsef_logged_in')!=='true')location.replace('mylogin.html');}catch(e){location.replace('mylogin.html');}})();
+  </script>
   <header class="site-header">
     <nav class="main-nav">
       <div class="container nav-container">
@@ -364,7 +367,7 @@
         <a href="contactus.html">Contact Us</a>
         <a href="participants.html">Participants</a>
         <a href="volunteers.html">Volunteer</a>
-        <a href="sport-applications.html">MyLogin</a>
+        <a href="mylogin.html">MyLogin</a>
       </div>
       <div class="footer-social">
         <h3>Follow us</h3>
