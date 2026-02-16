@@ -1,0 +1,78 @@
+/* Volunteers/Community Page Styles */
+.volunteers-hero {
+  position: relative;
+  height: 334px;
+  background: url("../assets/impact-hero.png") center/cover no-repeat;
+  overflow: visible;
+}
+
+.volunteers-hero-title {
+  position: absolute;
+  left: 80px;
+  bottom: -48px;
+  width: 320px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.volunteers-hero-title h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.volunteers-section {
+  background: var(--green-05);
+  padding: 96px 0 120px;
+}
+
+.volunteers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.volunteer-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.volunteer-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.volunteer-info {
+  background: var(--green-05);
+  padding: 16px;
+  text-align: center;
+}
+
+.volunteer-info h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.volunteer-info p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--muted);
+}

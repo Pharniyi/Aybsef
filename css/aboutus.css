@@ -1,0 +1,340 @@
+  .about-hero {
+    position: relative;
+    height: 334px;
+    background: url("../assets/aboutus-hero.png") center/cover no-repeat;
+    overflow: visible;
+  }
+
+  .about-hero-strike {
+    position: absolute;
+    left: -40px;
+    bottom: -90px;
+    width: 334px;
+    height: 303px;
+    pointer-events: none;
+  }
+
+  .about-hero-strike img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .about-hero-card {
+    position: absolute;
+    left: 80px;
+    bottom: -48px;
+    width: 280px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .about-hero-card h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .about-intro {
+    padding: 120px 0 64px;
+    background: var(--green-05);
+  }
+
+  .about-intro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    align-items: center;
+  }
+
+  .about-intro-text {
+    margin: 0;
+    font-size: 22px;
+    line-height: 36px;
+    color: var(--dark);
+    text-align: justify;
+  }
+
+  .about-video {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 432px;
+    background: #1a1a1a;
+  }
+
+  .about-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(51, 51, 51, 0.55) 0%, rgba(51, 51, 51, 0.85) 100%);
+  }
+
+  .about-video-header {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .about-video-logo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-video-logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+
+  .about-video-logo-mark {
+    position: absolute;
+    inset: 8px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .about-video-header span {
+    max-width: 414px;
+  }
+
+  .about-video-more {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .about-video-more img {
+    width: 18px;
+    height: 26px;
+  }
+
+  .about-video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 56px;
+  }
+
+  .about-video-play img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .string-divider {
+    background: var(--white);
+    margin: 0;
+  }
+
+  .string-divider img {
+    width: 100%;
+    display: block;
+  }
+
+  .about-mission {
+    padding: 48px 0 64px;
+    background: var(--white);
+  }
+
+  .about-mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .about-mission-item {
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .about-mission-item img {
+    width: 108px;
+    height: 108px;
+  }
+
+  .about-mission-item h2 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .about-mission-item p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 36px;
+    color: var(--dark);
+  }
+
+  .about-values {
+    padding: 36px 0 64px;
+    background: var(--green-10);
+  }
+
+  .about-values h2 {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  .value-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--card);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .value-card img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .value-card h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .value-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--dark);
+    text-align: justify;
+  }
+
+  .value-card--wide {
+    grid-column: span 3;
+  }
+
+  .value-card--narrow {
+    grid-column: span 2;
+  }
+
+  .about-team {
+    padding: 48px 0 64px;
+    background: var(--white);
+  }
+
+  .about-team h2 {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  .team-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card);
+  }
+
+  .team-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .team-card-body {
+    padding: 16px 24px;
+    text-align: left;
+  }
+
+  .team-card-body h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .team-card-body p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--muted);
+  }
+
+  .about-partners {
+    padding: 115px 0 72px;
+    background: var(--green-10);
+    text-align: center;
+  }
+
+  .about-partners h2 {
+    margin: 0 0 48px;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .about-partners .partners-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+
+  .about-partners .partners-logos img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+  }

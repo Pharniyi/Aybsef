@@ -1,0 +1,138 @@
+/* Impact Details Page Styles */
+
+.impact-details-hero {
+  position: relative;
+  height: 334px;
+  background: url("../assets/impact-hero.png") center/cover no-repeat;
+  overflow: visible;
+}
+
+.impact-details-hero-title {
+  position: absolute;
+  left: 80px;
+  bottom: -48px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.impact-details-hero-title h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.impact-details-breadcrumb {
+  background: var(--green-05);
+  padding: 24px 0;
+  margin-top: 60px;
+}
+
+.breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-link {
+  font: var(--Text\/Medium\/Small);
+  color: var(--green);
+}
+
+.breadcrumb-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.breadcrumb-current {
+  font: var(--Text\/Regular\/Small);
+  color: var(--muted);
+}
+
+.impact-details-content {
+  background: var(--green-05);
+  padding-bottom: 80px;
+}
+
+.impact-details-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 42px 48px;
+  box-shadow: 0 6px 24px rgba(51, 51, 51, 0.08);
+}
+
+.impact-details-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.impact-details-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background: var(--green-05);
+  text-align: center;
+}
+
+.impact-details-month {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--green);
+}
+
+.impact-details-day {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.impact-details-title h2 {
+  margin: 0 0 4px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.impact-details-title p {
+  margin: 0;
+  font-size: 24px;
+  color: var(--dark);
+}
+
+.impact-details-text {
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--dark);
+  text-align: justify;
+  margin: 0 0 24px;
+}
+
+.impact-details-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+  margin: 32px 0;
+}
+
+.impact-details-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}

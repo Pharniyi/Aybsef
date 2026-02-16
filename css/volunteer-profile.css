@@ -1,0 +1,129 @@
+/* Volunteer Profile Page Styles */
+.volunteer-profile-hero {
+  position: relative;
+  height: 334px;
+  background: url("../assets/profile-herobg.png") center/cover no-repeat;
+  overflow: visible;
+}
+
+.volunteer-profile-hero-title {
+  position: absolute;
+  left: 80px;
+  bottom: -48px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.volunteer-profile-hero-title h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.volunteer-profile-breadcrumb {
+  padding: 24px 0 16px;
+  background: var(--green-05);
+  margin-top: 60px;
+}
+
+.volunteer-profile-breadcrumb .breadcrumb-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.volunteer-profile-breadcrumb .breadcrumb-link {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.volunteer-profile-breadcrumb .breadcrumb-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.breadcrumb-label-mobile {
+  display: none;
+}
+
+.volunteer-profile-details {
+  padding: 24px 0 96px;
+  background: var(--green-05);
+}
+
+.volunteer-profile-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 36px;
+  display: flex;
+  gap: 48px;
+  box-shadow: var(--card);
+}
+
+.volunteer-profile-photo {
+  width: 420px;
+  align-self: stretch;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.volunteer-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.volunteer-profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.volunteer-profile-header h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.volunteer-profile-header p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.75);
+}
+
+.volunteer-profile-bio h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.volunteer-profile-bio p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.75);
+  text-align: justify;
+}
+
+.volunteer-profile-divider {
+  display: none;
+}

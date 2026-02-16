@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Sport Program Application - AYBSEF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/non-sport-applications.css">
+  <link rel="stylesheet" href="css/non-sport-applications-responsiveness.css">
+</head>
+
+<body>
+  <script>
+    (function(){try{if(localStorage.getItem('aybsef_logged_in')!=='true')location.replace('mylogin.html');}catch(e){location.replace('mylogin.html');}})();
+  </script>
+  <header class="site-header">
+    <nav class="main-nav">
+      <div class="container nav-container">
+        <a class="brand-logo" href="index.html">
+          <img class="logo" src="assets/AYBSEF_logo.png" alt="AYBSEF logo">
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li><a class="nav-link" href="programs.html">Programs</a></li>
+            <li><a class="nav-link" href="#">Courses</a></li>
+            <li><a class="nav-link" href="impacts.html">Impacts</a></li>
+          </ul>
+          <div class="nav-actions">
+            <div class="nav-dropdown">
+              <button class="btn btn-primary nav-dropdown-toggle" type="button" aria-haspopup="true"
+                aria-expanded="false">
+                Community
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 7L8 11L12 7" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="nav-dropdown-menu" role="menu">
+                <a class="nav-dropdown-item" href="volunteers.html" role="menuitem">Volunteer</a>
+                <a class="nav-dropdown-item" href="#" role="menuitem">Internship</a>
+                <a class="nav-dropdown-item" href="#" role="menuitem">Sponsorship</a>
+              </div>
+            </div>
+            <a class="btn btn-outline" href="contactus.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="application-hero">
+      <div class="application-hero-title">
+        <h1>Application</h1>
+      </div>
+    </section>
+
+    <section class="application-section">
+      <div class="container">
+        <div class="application-card">
+          <h2 class="application-title">Non-Sport Program Application</h2>
+
+          <div class="progress-indicator">
+            <div class="progress-step active" data-step="1">
+              <div class="step-circle">1</div>
+              <span class="step-label">Personal Details</span>
+            </div>
+            <div class="progress-step" data-step="2">
+              <div class="step-circle">2</div>
+              <span class="step-label">Guardian Details</span>
+            </div>
+            <div class="progress-step" data-step="3">
+              <div class="step-circle">3</div>
+              <span class="step-label">Academic Details</span>
+            </div>
+          </div>
+
+          <form id="applicationForm" class="application-form">
+            <!-- Step 1: Personal Details -->
+            <div class="form-step active" data-step="1">
+              <div class="step-header">
+                <h3>Step 1/3 Personal Details</h3>
+                <p>Please fill in the following details appropriately</p>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Studentname">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="aronga">
+                </div>
+                <div class="form-group">
+                  <label for="otherName">Other Name</label>
+                  <input type="text" id="otherName" name="otherName" placeholder="Brithany">
+                </div>
+                <div class="form-group">
+                  <label for="dateOfBirth">Date of Birth (DD/MM/YYYY)</label>
+                  <input type="text" id="dateOfBirth" name="dateOfBirth" placeholder="01/01/2000">
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="placeOfBirth">Place of Birth</label>
+                  <input type="text" id="placeOfBirth" name="placeOfBirth" placeholder="Lagos, Nigeria">
+                </div>
+                <div class="form-group full-width">
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address"
+                    placeholder="Villa 5, Adetokunbo Ademola, Victoria Island, Lagos">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Emailaddress@aybsef.org">
+                </div>
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option value="NIGERIA">NIGERIA</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <select id="city" name="city">
+                    <option value="">Select City</option>
+                    <option value="LAGOS">LAGOS</option>
+                  </select>
+                </div>
+                <div class="form-group full-width">
+                  <label for="specialNeeds">Special Needs</label>
+                  <input type="text" id="specialNeeds" name="specialNeeds"
+                    placeholder="Schizophrenia (Diagnosed 10/10/2021 by Prof. Adamu)">
+                </div>
+                <div class="form-group">
+                  <label for="heightFt">Height</label>
+                  <div class="height-inputs">
+                    <select id="heightFt" name="heightFt">
+                      <option value="">Select</option>
+                      <option value="5">5'</option>
+                    </select>
+                    <select id="heightIn" name="heightIn">
+                      <option value="">Select</option>
+                      <option value="07">07</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="weight">Weight (KG)</label>
+                  <input type="number" id="weight" name="weight" placeholder="65" min="0">
+                </div>
+                <div class="form-group">
+                  <label for="shirtSize">What size do you wear (EU)</label>
+                  <input type="text" id="shirtSize" name="shirtSize" placeholder="42">
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="prevStep()">Back</button>
+                <button type="button" class="btn btn-primary" onclick="nextStep()">Continue</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Guardian Details -->
+            <div class="form-step" data-step="2">
+              <div class="step-header">
+                <h3>Step 2/3 Guardian Details</h3>
+                <p>Please fill in the following details appropriately</p>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="guardianFirstName">First Name</label>
+                  <input type="text" id="guardianFirstName" name="guardianFirstName" placeholder="Ziyapapa">
+                </div>
+                <div class="form-group">
+                  <label for="guardianLastName">Last Name</label>
+                  <input type="text" id="guardianLastName" name="guardianLastName" placeholder="arongn">
+                </div>
+                <div class="form-group">
+                  <label for="guardianOtherName">Other Name</label>
+                  <input type="text" id="guardianOtherName" name="guardianOtherName" placeholder="Darmian">
+                </div>
+                <div class="form-group full-width">
+                  <label for="guardianAddress">Address</label>
+                  <input type="text" id="guardianAddress" name="guardianAddress"
+                    placeholder="Villa 5, Adetokunbo Ademola, Victoria Island, Lagos">
+                </div>
+                <div class="form-group">
+                  <label for="relationship">Relationship</label>
+                  <select id="relationship" name="relationship">
+                    <option value="">Select Relationship</option>
+                    <option value="Father">Father</option>
+                    <option value="Mother">Mother</option>
+                    <option value="Guardian">Guardian</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="guardianPhone">Phone Number</label>
+                  <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="+234 (80) 584-2353">
+                </div>
+                <div class="form-group">
+                  <label for="guardianEmail">Email Address</label>
+                  <input type="email" id="guardianEmail" name="guardianEmail" placeholder="Damianarongn@gmail.com">
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="prevStep()">Back</button>
+                <button type="button" class="btn btn-primary" onclick="nextStep()">Continue</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Academic Details -->
+            <div class="form-step" data-step="3">
+              <div class="step-header">
+                <h3>Step 3/3 Academic Details</h3>
+                <p>Please fill in the following details appropriately</p>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group full-width">
+                  <label for="schoolName">School Name</label>
+                  <input type="text" id="schoolName" name="schoolName"
+                    placeholder="St. Jude International College, Victoria Island, Lagos">
+                </div>
+                <div class="form-group">
+                  <label for="graduationYear">Graduation Year</label>
+                  <input type="text" id="graduationYear" name="graduationYear" placeholder="2024">
+                </div>
+                <div class="form-group">
+                  <label for="degreeCourse">Degree/Course</label>
+                  <select id="degreeCourse" name="degreeCourse">
+                    <option value="">Select</option>
+                    <option value="Brittany">Brittany</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="childCare">Child Care</label>
+                  <select id="childCare" name="childCare">
+                    <option value="">Select</option>
+                    <option value="Brittany S">Brittany S</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="lastNameAcademic">Last Name</label>
+                  <input type="text" id="lastNameAcademic" name="lastNameAcademic" placeholder="N/A">
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-secondary" onclick="prevStep()">Back</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <img class="footer-logo" src="assets/AYBSEF_logo.png" alt="AYBSEF logo">
+      <div class="footer-list">
+        <span>About Us</span>
+        <span>Courses</span>
+        <span>Programs</span>
+        <a href="team.html">Our Team</a>
+        <a href="volunteers.html">Community</a>
+      </div>
+      <div class="footer-list">
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="participants.html">Participants</a>
+        <a href="volunteers.html">Volunteer</a>
+        <a href="mylogin.html">MyLogin</a>
+      </div>
+      <div class="footer-social">
+        <h3>Follow us</h3>
+        <div class="footer-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M18.901 1.15234H22.581L14.541 10.3423L24 22.8453H16.594L10.794 15.2613L4.156 22.8453H0.474L9.074 13.0153L0 1.15334H7.594L12.837 8.08534L18.901 1.15234ZM17.61 20.6433H19.649L6.486 3.23934H4.298L17.61 20.6433Z"
+              fill="#333333" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M13.7 13.65H16.45L17.55 9.25H13.7V7.05C13.7 5.917 13.7 4.85 15.9 4.85H17.55V1.154C17.1914 1.1067 15.8373 1 14.4073 1C11.4208 1 9.3 2.8227 9.3 6.17V9.25H6V13.65H9.3V23H13.7V13.65Z"
+              fill="#333333" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+            <path
+              d="M11.2857 15.8571L17.9586 12L11.2857 8.14286V15.8571ZM26.1486 5.79C26.3157 6.39429 26.4314 7.20429 26.5086 8.23286C26.5986 9.26143 26.6371 10.1486 26.6371 10.92L26.7143 12C26.7143 14.8157 26.5086 16.8857 26.1486 18.21C25.8271 19.3671 25.0814 20.1129 23.9243 20.4343C23.32 20.6014 22.2143 20.7171 20.5171 20.7943C18.8457 20.8843 17.3157 20.9229 15.9014 20.9229L13.8571 21C8.47 21 5.11429 20.7943 3.79 20.4343C2.63286 20.1129 1.88714 19.3671 1.56571 18.21C1.39857 17.6057 1.28286 16.7957 1.20571 15.7671C1.11571 14.7386 1.07714 13.8514 1.07714 13.08L1 12C1 9.18429 1.20571 7.11429 1.56571 5.79C1.88714 4.63286 2.63286 3.88714 3.79 3.56571C4.39429 3.39857 5.5 3.28286 7.19714 3.20571C8.86857 3.11571 10.3986 3.07714 11.8129 3.07714L13.8571 3C19.2443 3 22.6 3.20571 23.9243 3.56571C25.0814 3.88714 25.8271 4.63286 26.1486 5.79Z"
+              fill="#333333" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M19.7778 2C20.3671 2 20.9324 2.23413 21.3491 2.65087C21.7659 3.06762 22 3.63285 22 4.22222V19.7778C22 20.3671 21.7659 20.9324 21.3491 21.3491C20.9324 21.7659 20.3671 22 19.7778 22H4.22222C3.63285 22 3.06762 21.7659 2.65087 21.3491C2.23413 20.9324 2 20.3671 2 19.7778V4.22222C2 3.63285 2.23413 3.06762 2.65087 2.65087C3.06762 2.23413 3.63285 2 4.22222 2H19.7778ZM19.2222 19.2222V13.3333C19.2222 12.3727 18.8406 11.4513 18.1613 10.772C17.482 10.0927 16.5607 9.71111 15.6 9.71111C14.6556 9.71111 13.5556 10.2889 13.0222 11.1556V9.92222H9.92222V19.2222H13.0222V13.7444C13.0222 12.8889 13.7111 12.1889 14.5667 12.1889C14.9792 12.1889 15.3749 12.3528 15.6666 12.6445C15.9583 12.9362 16.1222 13.3319 16.1222 13.7444V19.2222H19.2222ZM6.31111 8.17778C6.80618 8.17778 7.28098 7.98111 7.63104 7.63104C7.98111 7.28098 8.17778 6.80618 8.17778 6.31111C8.17778 5.27778 7.34444 4.43333 6.31111 4.43333C5.81309 4.43333 5.33547 4.63117 4.98332 4.98332C4.63117 5.33547 4.43333 5.81309 4.43333 6.31111C4.43333 7.34444 5.27778 8.17778 6.31111 8.17778ZM7.85556 19.2222V9.92222H4.77778V19.2222H7.85556Z"
+              fill="#333333" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.80775 1.34961C4.62412 1.34961 3.48894 1.81969 2.65183 2.65648C1.81472 3.49327 1.3442 4.62827 1.34375 5.8119V17.7159C1.34375 18.8998 1.81406 20.0353 2.65123 20.8724C3.48839 21.7096 4.62382 22.1799 5.80775 22.1799H17.7118C18.8954 22.1794 20.0304 21.7089 20.8672 20.8718C21.704 20.0347 22.174 18.8995 22.174 17.7159V5.8119C22.1736 4.62856 21.7033 3.49383 20.8666 2.65708C20.0298 1.82034 18.8951 1.35006 17.7118 1.34961H5.80775ZM18.9958 5.81875C18.9958 6.15975 18.8603 6.48677 18.6192 6.72789C18.3781 6.96901 18.051 7.10447 17.71 7.10447C17.369 7.10447 17.042 6.96901 16.8009 6.72789C16.5598 6.48677 16.4243 6.15975 16.4243 5.81875C16.4243 5.47776 16.5598 5.15073 16.8009 4.90962C17.042 4.6685 17.369 4.53304 17.71 4.53304C18.051 4.53304 18.3781 4.6685 18.6192 4.90962C18.8603 5.15073 18.9958 5.47776 18.9958 5.81875ZM11.7615 8.19818C10.8158 8.19818 9.90883 8.57385 9.24012 9.24255C8.57142 9.91125 8.19575 10.8182 8.19575 11.7639C8.19575 12.7096 8.57142 13.6165 9.24012 14.2852C9.90883 14.9539 10.8158 15.3296 11.7615 15.3296C12.7072 15.3296 13.6141 14.9539 14.2828 14.2852C14.9515 13.6165 15.3272 12.7096 15.3272 11.7639C15.3272 10.8182 14.9515 9.91125 14.2828 9.24255C13.6141 8.57385 12.7072 8.19818 11.7615 8.19818ZM6.47975 11.7639C6.47975 10.3636 7.03603 9.02056 8.02623 8.03037C9.01642 7.04018 10.3594 6.4839 11.7598 6.4839C13.1601 6.4839 14.5031 7.04018 15.4933 8.03037C16.4835 9.02056 17.0398 10.3636 17.0398 11.7639C17.0398 13.1642 16.4835 14.5072 15.4933 15.4974C14.5031 16.4876 13.1601 17.0439 11.7598 17.0439C10.3594 17.0439 9.01642 16.4876 8.02623 15.4974C7.03603 14.5072 6.47975 13.1642 6.47975 11.7639Z"
+              fill="#333333" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© AYBSEF 2026</div>
+    </div>
+  </footer>
+
+  <script src="js/non-sport-applications.js"></script>
+  <script src="js/nav-swap.js"></script>
+</body>
+
+</html>

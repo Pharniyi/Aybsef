@@ -1,0 +1,86 @@
+/* Team Page Styles */
+.team-hero {
+  position: relative;
+  height: 334px;
+  background: url("../assets/profile-herobg.png") center/cover no-repeat;
+  overflow: visible;
+}
+
+.team-hero-title {
+  position: absolute;
+  left: 80px;
+  bottom: -48px;
+  width: 280px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.team-hero-title h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.team-section {
+  padding: 64px 0 96px;
+  background: var(--white);
+}
+
+.team-section h2 {
+  margin: 0 0 48px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.team-card-body {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.team-card-body h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.team-card-body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--muted);
+}
