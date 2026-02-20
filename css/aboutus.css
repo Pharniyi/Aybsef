@@ -329,8 +329,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .about-partners .partners-logos img {

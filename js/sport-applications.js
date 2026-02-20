@@ -6,10 +6,10 @@ function showStep(step) {
   document.querySelectorAll('.form-step').forEach(s => {
     s.classList.remove('active');
   });
-  
+
   // Show current step
   document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
-  
+
   // Update progress indicator
   document.querySelectorAll('.progress-step').forEach((p, index) => {
     if (index + 1 < step) {
@@ -42,7 +42,7 @@ function prevStep() {
 showStep(1);
 
 // Form submission
-document.getElementById('applicationForm').addEventListener('submit', function(e) {
+document.getElementById('applicationForm').addEventListener('submit', function (e) {
   e.preventDefault();
   alert('Application submitted successfully!');
 });

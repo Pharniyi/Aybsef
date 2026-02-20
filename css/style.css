@@ -389,8 +389,8 @@
     #nav-panel {
       display: none;
       background: var(--white);
-      border-bottom: 1px solid rgba(51,51,51,0.06);
-      box-shadow: 0 6px 24px rgba(51,51,51,0.08);
+      border-bottom: 1px solid rgba(51, 51, 51, 0.06);
+      box-shadow: 0 6px 24px rgba(51, 51, 51, 0.08);
       z-index: 999;
     }
 
@@ -426,8 +426,14 @@
     }
 
     @media (max-width: 768px) {
-      .nav-panel-content { flex-direction: column; }
-      .nav-panel .nav-panel-close { right: 12px; top: 8px; }
+      .nav-panel-content {
+        flex-direction: column;
+      }
+
+      .nav-panel .nav-panel-close {
+        right: 12px;
+        top: 8px;
+      }
     }
 
     .string-divider {
@@ -562,8 +568,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 100px;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       padding-bottom: 24px;
     }
 
@@ -579,6 +584,13 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
     }
+
+    .team-grid .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
 
     .testimonials {
       background: var(--green-05);
