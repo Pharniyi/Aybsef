@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impact Details - AYBSEF</title>
+    <title>Courses - AYBSEF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/impact-details.css">
-    <link rel="stylesheet" href="css/impact-details-responsiveness.css">
+    <link rel="stylesheet" href="css/programs.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/programs-responsiveness.css">
+    <link rel="stylesheet" href="css/course-profile.css">
 </head>
 
 <body>
@@ -32,8 +34,8 @@
                         <li><a class="nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="aboutus.html">About Us</a></li>
                         <li><a class="nav-link" href="programs.html">Programs</a></li>
-                        <li><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li><a class="nav-link active" href="impacts.html">Impacts</a></li>
+                        <li><a class="nav-link active" href="courses.html">Courses</a></li>
+                        <li><a class="nav-link" href="impacts.html">Impacts</a></li>
                     </ul>
                     <div class="nav-actions">
                         <div class="nav-dropdown">
@@ -59,93 +61,128 @@
         </nav>
     </header>
 
-    <main>
-        <section class="impact-details-hero">
-            <div class="impact-details-hero-title">
-                <h1>Impact</h1>
+    <section class="programs-hero">
+        <div class="programs-hero-title">
+            <h1>Courses</h1>
+        </div>
+    </section>
+
+    <section class="course-content">
+        <div class="profile-page-bg">
+            <div class="container breadcrumb-container">
+                <nav class="profile-breadcrumb">
+                    <a href="courses.html">Courses</a>
+                    <span class="separator">></span>
+                    <span class="current" id="breadcrumb-title">...</span>
+                </nav>
             </div>
-        </section>
 
-        <section class="impact-details-breadcrumb">
-            <div class="container breadcrumb-content">
-                <a class="breadcrumb-link" href="impacts.html">Impacts</a>
-                <img class="breadcrumb-icon"
-                    src="https://www.figma.com/api/mcp/asset/226cc79d-e2ec-4561-8a96-be0e1f6b5eb6" alt=""
-                    aria-hidden="true">
-                <span class="breadcrumb-current">College PREP Program</span>
-            </div>
-        </section>
-
-        <section class="impact-details-content">
-            <div class="container">
-                <div class="impact-details-card">
-                    <div class="impact-details-header">
-                        <div class="impact-details-date">
-                            <span class="impact-details-month">June</span>
-                            <span class="impact-details-day">18</span>
+            <div class="container profile-card-header">
+                <div class="header-main">
+                    <div class="header-text-side">
+                        <div class="rating-badge">
+                            <img src="assets/courses-profile-icon.svg" alt="">
+                            <span class="rating">4.8 (3,421
+                                reviews)</span>
                         </div>
-                        <div class="impact-details-title">
-                            <h2>College PREP Program</h2>
-                            <p>Lagos, Nigeria</p>
+                        <h1 class="course-title-main" id="course-title">Loading...</h1>
+                        <p class="course-tagline-main" id="course-tagline">...</p>
+
+                        <div class="header-highlights" id="header-highlights">
+                            <!-- Populated by JS -->
                         </div>
+
+                        <a href="sport-applications.html" class="btn btn-primary header-enroll-btn">Enroll Now</a>
                     </div>
-
-                    <p class="impact-details-text">On June 18, the African Youth Baseball &amp; Softball Empowerment
-                        Foundation
-                        (AYBSEF) hosted an inspiring &quot;College PREP Program&quot; in Lagos, Nigeria. This event
-                        aimed to equip
-                        young athletes with the necessary skills and knowledge to pursue higher education opportunities,
-                        both
-                        locally and internationally.</p>
-                    <p class="impact-details-text">Held in a vibrant and energetic atmosphere, the program featured a
-                        series of
-                        workshops and sessions focused on academic readiness, college application processes, scholarship
-                        opportunities, and the importance of balancing sports with academics. Participants had the
-                        chance to
-                        interact with educational consultants, former student-athletes, and successful professionals who
-                        shared
-                        their experiences and provided valuable insights. The event was a remarkable success, with
-                        enthusiastic
-                        participation from aspiring young baseball and softball players.</p>
-                    <p class="impact-details-text">A few photos captured during the event showcase the engagement and
-                        excitement
-                        of the attendees, highlighting their commitment to personal and academic growth.</p>
-
-                    <div class="impact-details-gallery">
-                        <img class="impact-details-photo" src="assets/impactimg1.png" alt="photo 1">
-                        <img class="impact-details-photo" src="assets/impactimg2.png" alt="photo 2">
-                        <img class="impact-details-photo" src="assets/impactimg3.png" alt="photo 3">
-                        <img class="impact-details-photo" src="assets/impactimg4.png" alt="photo 4">
-                        <img class="impact-details-photo" src="assets/impactimg5.png" alt="photo 5">
-                        <img class="impact-details-photo" src="assets/impactimg6.png" alt="photo 6">
-                        <img class="impact-details-photo" src="assets/impactimg7.png" alt="photo 7">
-                        <img class="impact-details-photo" src="assets/impactimg8.png" alt="photo 8">
+                    <div class="header-image-side">
+                        <img src="" alt="" id="course-image">
                     </div>
-
-                    <p class="impact-details-text">AYBSEF continues to empower youth through sports and education,
-                        fostering a
-                        brighter future for the next generation of athletes and scholars.</p>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="container tabs-container">
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                    <button class="tab-btn" data-tab="instructor">Instructor</button>
+                </div>
+            </div>
+
+            <div class="container main-layout">
+                <div class="layout-content">
+                    <section class="learning-objectives-section">
+                        <h2>Learning Objectives</h2>
+                        <div class="objectives-grid" id="learning-objectives">
+                            <!-- Populated by JS -->
+                        </div>
+                    </section>
+
+                    <div class="stats-row" id="stats-row">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <section class="curriculum-section">
+                        <h2>Course Curriculum</h2>
+                        <div class="curriculum-list" id="curriculum-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </section>
+
+                    <section class="instructor-profile-section">
+                        <h2>Instructor Profile</h2>
+                        <div id="instructor-profile">
+                            <!-- Populated by JS -->
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="layout-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="course-features-box">
+                            <h3>Course Features</h3>
+                            <ul class="features-list" id="features-list">
+                                <!-- Populated by JS -->
+                            </ul>
+
+                            <div class="pricing-box">
+                                <div class="price-row">
+                                    <span class="current-price" id="current-price">...</span>
+                                    <span class="old-price" id="old-price">...</span>
+                                </div>
+                                <div class="savings-badge" id="savings-badge">...</div>
+                            </div>
+
+                            <a href="sport-applications.html" class="btn btn-primary sidebar-enroll-btn">Enroll Now</a>
+
+                            <div class="includes-section">
+                                <h4>This course includes:</h4>
+                                <ul class="includes-list" id="includes-list">
+                                    <!-- Populated by JS -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer">
         <div class="container footer-top">
             <img class="footer-logo" src="assets/AYBSEF_logo.png" alt="AYBSEF logo">
             <div class="footer-list">
-                <span>About Us</span>
-                <span>Courses</span>
-                <span>Programs</span>
+                <a href="aboutus.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="programs.html">Programs</a>
                 <a href="team.html">Our Team</a>
-                <span>Community</span>
+                <a href="impacts.html">Community</a>
             </div>
             <div class="footer-list">
                 <a href="partners.html">Partners</a>
-                <a href="non-sport-applications.html">Contact Us</a>
+                <a href="contactus.html">Contact Us</a>
                 <a href="participants.html">Participants</a>
                 <a href="volunteers.html">Volunteer</a>
-                <a href="sport-applications.html">MyLogin</a>
+                <a href="mylogin.html">MyLogin</a>
             </div>
             <div class="footer-social">
                 <h3>Follow us</h3>
@@ -174,7 +211,6 @@
                             d="M19.7778 2C20.3671 2 20.9324 2.23413 21.3491 2.65087C21.7659 3.06762 22 3.63285 22 4.22222V19.7778C22 20.3671 21.7659 20.9324 21.3491 21.3491C20.9324 21.7659 20.3671 22 19.7778 22H4.22222C3.63285 22 3.06762 21.7659 2.65087 21.3491C2.23413 20.9324 2 20.3671 2 19.7778V4.22222C2 3.63285 2.23413 3.06762 2.65087 2.65087C3.06762 2.23413 3.63285 2 4.22222 2H19.7778ZM19.2222 19.2222V13.3333C19.2222 12.3727 18.8406 11.4513 18.1613 10.772C17.482 10.0927 16.5607 9.71111 15.6 9.71111C14.6556 9.71111 13.5556 10.2889 13.0222 11.1556V9.92222H9.92222V19.2222H13.0222V13.7444C13.0222 12.8889 13.7111 12.1889 14.5667 12.1889C14.9792 12.1889 15.3749 12.3528 15.6666 12.6445C15.9583 12.9362 16.1222 13.3319 16.1222 13.7444V19.2222H19.2222ZM6.31111 8.17778C6.80618 8.17778 7.28098 7.98111 7.63104 7.63104C7.98111 7.28098 8.17778 6.80618 8.17778 6.31111C8.17778 5.27778 7.34444 4.43333 6.31111 4.43333C5.81309 4.43333 5.33547 4.63117 4.98332 4.98332C4.63117 5.33547 4.43333 5.81309 4.43333 6.31111C4.43333 7.34444 5.27778 8.17778 6.31111 8.17778ZM7.85556 19.2222V9.92222H4.77778V19.2222H7.85556Z"
                             fill="#333333" />
                     </svg>
-                    </a>
                     <a href="https://www.instagram.com/aybsefng?igsh=MTd4a3R4c3VmM2d0aw==" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -186,11 +222,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container">© AYBSEF 2024</div>
+            <div class="container">© AYBSEF 2026</div>
         </div>
     </footer>
 
-    <script src="js/impact-details.js"></script>
+    <script src="js/programs.js"></script>
+    <script src="js/nav-swap.js"></script>
+    <script src="js/course-profile.js"></script>
 </body>
 
 </html>

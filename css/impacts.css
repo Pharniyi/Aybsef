@@ -4,7 +4,7 @@
 .impact-hero {
   position: relative;
   height: 334px;
-  background: url("../assets/impact-hero.png") center/cover no-repeat;
+  background: url("../assets/impact-herobg1.jpg") center/cover no-repeat;
   overflow: visible;
 }
 
@@ -134,8 +134,8 @@
 
 .impact-about-text {
   margin: 0;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 32px;
   color: var(--dark);
   text-align: justify;
   max-width: 592px;

@@ -37,7 +37,7 @@ if (mobileToggle && navMenu) {
 }
 
 // Participants "See More / Show Less"
-const VISIBLE_PARTICIPANTS = 15;
+const VISIBLE_PARTICIPANTS = 18;
 const participantsGrid = document.querySelector(".participants-grid");
 const participantsToggle = document.querySelector(".participants-see-all");
 
