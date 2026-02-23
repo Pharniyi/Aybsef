@@ -310,3 +310,70 @@
   font-size: 14px;
   color: rgba(51, 51, 51, 0.6);
 }
+
+/* Reports Section Styles */
+.reports-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#reports-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+#reports-toggle-btn svg {
+  transition: transform 0.3s ease;
+}
+
+#reports-toggle-btn.active svg {
+  transform: rotate(180deg);
+}
+
+.reports-dropdown {
+  margin-top: 12px;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  z-index: 100;
+  border: 1px solid var(--green-05);
+}
+
+.report-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid var(--green-05);
+}
+
+.report-link:last-child {
+  border-bottom: none;
+}
+
+.report-link:hover {
+  background: var(--green-05);
+  color: var(--green);
+}
+
+.report-icon {
+  background: #ffeded;
+  color: #ff4d4d;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

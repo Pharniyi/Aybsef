@@ -382,6 +382,7 @@
     .who-card p {
       margin: 0;
       font: var(--Text\/Light\/Large);
+      font-size: 20px;
       color: var(--dark);
     }
 

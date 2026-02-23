@@ -37,3 +37,25 @@ if (mobileToggle && navMenu) {
 }
 
 // Event Card Navigation handled via anchor tags
+
+// Reports Toggle Logic
+const reportsBtn = document.getElementById("reports-toggle-btn");
+const reportsList = document.getElementById("reports-list");
+
+if (reportsBtn && reportsList) {
+  reportsBtn.addEventListener("click", () => {
+    const isVisible = reportsList.style.display !== "none";
+    reportsList.style.display = isVisible ? "none" : "block";
+    reportsBtn.setAttribute("aria-expanded", String(!isVisible));
+    reportsBtn.classList.toggle("active");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (event) => {
+    if (!reportsBtn.contains(event.target) && !reportsList.contains(event.target)) {
+      reportsList.style.display = "none";
+      reportsBtn.setAttribute("aria-expanded", "false");
+      reportsBtn.classList.remove("active");
+    }
+  });
+}
