@@ -2,7 +2,7 @@
 .team-hero {
   position: relative;
   height: 334px;
-  background: url("../assets/aboutus-hero.png") center/cover no-repeat;
+  background: url("../assets/hero-sliders/teams-hero.jpg") center/cover no-repeat;
   overflow: visible;
 }
 

@@ -1,7 +1,7 @@
   .about-hero {
     position: relative;
     height: 334px;
-    background: url("../assets/aboutus-hero.png") center/cover no-repeat;
+    background: url("../assets/hero-sliders/aboutus-hero1.jpg") center/cover no-repeat;
     overflow: visible;
   }
 
@@ -334,7 +334,7 @@
   }
 
   .about-partners .partners-logos img {
-    height: 100px;
+    height: 80px;
     width: auto;
     object-fit: contain;
   }

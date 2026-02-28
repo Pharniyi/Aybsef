@@ -180,7 +180,7 @@
 
 /* Achievements Section */
 .achievements {
-  padding: 48px 0 64px;
+  padding: 48px 0 0;
   background: var(--white);
 }
 
@@ -228,7 +228,7 @@
 /* Events Section */
 .events-section {
   padding: 64px 0;
-  background: var(--green-05);
+  background: var(--white);
 }
 
 .events-section:nth-of-type(even) {
@@ -236,6 +236,22 @@
 }
 
 .events-section h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 32px;
+}
+
+.events-sections {
+  background: var(--white);
+}
+
+.events-sections:nth-of-type(even) {
+  background: var(--white);
+}
+
+.events-sections h2 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;

@@ -57,9 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Live Weekly Sessions',
                 'No prior coding experience required'
             ],
-            price: '₦750,000',
-            oldPrice: '₦1,050,000',
-            savings: '₦300,000',
             includes: [
                 '60+ hours on-demand video',
                 '15 downloadable resources',
@@ -111,9 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Available in English',
                 'Bi-weekly production labs'
             ],
-            price: '₦650,000',
-            oldPrice: '₦850,000',
-            savings: '₦200,000',
             includes: [
                 '40+ hours on-demand video',
                 '10 production templates',
@@ -140,10 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateElement('course-tagline', data.tagline);
     updateElement('course-image', data.image, 'src');
     updateElement('course-image', data.title, 'alt');
-    updateElement('current-price', data.price);
-    updateElement('old-price', data.oldPrice);
-    updateElement('savings-badge', `Save ${data.savings}`);
-    
+
     document.title = `${data.title} - AYBSEF`;
 
     // Update Highlights

@@ -97,14 +97,60 @@
     }
 
     .btn-outline {
-      border-color: var(--green);
+      border-color:var(--green);
       color: var(--green);
+      padding: 12px 24px;
+    }
+
+    .btn-outline:hover {
+      background: var(--green);
+      color: var(--white);
     }
 
     .btn-light {
       background: var(--white);
       color: var(--green);
+      font-weight: 700;
+      padding: 12px 24px;
       width: max-content;
+    }
+
+    .btn-light:hover {
+      background: var(--green-10);
+      color: var(--green);
+    }
+
+    /* CTA Banner Component */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--green) 0%, #006400 100%);
+      padding: 50px 0;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta-banner-content {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .cta-banner h2 {
+      font: var(--Text\/Display\/H3);
+      margin: 0;
+    }
+
+    .cta-banner p {
+      font: var(--Text\/Regular\/Large);
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    .cta-banner .btn {
+      padding: 16px 40px;
+      font-size: 18px;
     }
 
     .site-header {
@@ -337,7 +383,7 @@
 
     .who-we-are {
       position: relative;
-      background: url("../assets/Who-we-aare.png") center/cover no-repeat;
+      background: url("../assets/Who-we-aare1.png") top center/cover no-repeat;
       padding: 120px 0 200px;
     }
 
@@ -353,15 +399,16 @@
       z-index: 1;
       background: var(--white);
       border-radius: 8px;
+      margin-top: 34px;
       padding: 32px 36px;
-      max-width: 520px;
+      max-width: 568px;
       box-shadow: var(--card);
     }
 
     .who-card-header {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       background: rgba(4, 132, 4, 0.08);
       padding: 8px 12px;
       border-radius: 4px;
@@ -382,7 +429,7 @@
     .who-card p {
       margin: 0;
       font: var(--Text\/Light\/Large);
-      font-size: 20px;
+      font-size: 18px;
       color: var(--dark);
     }
 
@@ -451,7 +498,7 @@
 
     .metrics {
       margin-top: 0;
-      padding: 24px 0 64px;
+      padding: 24px 0 0;
       background: var(--white);
       box-shadow: 0 -12px 28px rgba(0, 0, 0, 0.08);
     }
@@ -571,6 +618,12 @@
       align-items: center;
       flex-wrap: nowrap;
       padding-bottom: 24px;
+    }
+
+    .partners-logos img {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
     }
 
     .team h3,
