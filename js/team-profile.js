@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'adekunle': {
       name: 'Adedeji Adekunle',
       role: 'BoT Chair & Technical Lead',
-      image: 'assets/team/Deji Adejikunle.jpg',
+      image: 'assets/team/Adedeji-Adekunle.png',
       bio: 'Adedeji Adekunle serves as the BoT Chair and Technical Lead at AYBSEF. With extensive experience in technical leadership and sports administration, he oversees the foundation\'s strategic technical direction and governance, ensuring high standards across all programs.'
     },
     'farounbi': {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'kehinde': {
       name: 'Kehinde',
       role: 'Assistant Coach, Softball',
-      image: 'assets/team/Deji Adejikunle.jpg',
+      image: 'assets/team/kehinde.jpg',
       bio: 'Kehinde serves as the Assistant Coach for Softball at AYBSEF. Working closely with the head coaches, Kehinde focuses on technical skill development and supporting youth athletes as they build their fundamentals in softball.'
     }
   };
