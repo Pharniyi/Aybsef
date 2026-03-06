@@ -677,11 +677,13 @@
       height: 58px;
       border-radius: 50%;
       object-fit: cover;
+      object-position: top;
     }
 
     .testimonial-name {
       font: var(--Text\/Semi-bold\/Small);
       color: var(--dark);
+      
     }
 
     .testimonial-role {
